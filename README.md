@@ -4,7 +4,7 @@ Create GitHub PullRequest of bundle update in Travis CI.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add following line to your application's Gemfile:
 
 ```ruby
 gem 'travisci-bundle-update-pr'
@@ -20,9 +20,8 @@ Or install it yourself as:
 
 ## Getting Started
 
-Set your GitHub Personal access tokens to `$GITHUB_ACCESS_TOKEN`.
-Remember to keep your GitHub Personal access tokens secret, it should be encrypted.
-https://docs.travis-ci.com/user/encryption-keys/
+Set your GitHub Personal access tokens to `$GITHUB_ACCESS_TOKEN`.  
+Remember to keep your GitHub Personal access tokens secret, it should [be encrypted](https://docs.travis-ci.com/user/encryption-keys/).
 
 ```yaml
 # .travis.yml
@@ -39,9 +38,8 @@ before_script:
   - ./scripts/travisci-bundle-update-pr.sh
 ```
 
-In the case of Cron jobs run builds.
-Cron Jobs are not enabled by default.
-https://docs.travis-ci.com/user/cron-jobs/
+In the case of Cron jobs run builds.  
+Cron Jobs are not enabled by [default](https://docs.travis-ci.com/user/cron-jobs/).
 
 ```bash
 # .travisci-bundle-update-pr.sh
@@ -58,7 +56,8 @@ fi
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`.  
+To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
